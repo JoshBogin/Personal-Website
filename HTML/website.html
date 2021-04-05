@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html id="page">
+    <head>
+        <title>Josh's Website</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/website.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="screen">
+            <div class="container">
+                <div class="section header">
+                    <h1 id="headerText">Joshua Bogin</h1>
+                </div>
+                <!-- links -->
+                <div class="section links">
+                    <!-- resume -->
+                    <a class="link" href="https://drive.google.com/file/d/15BKXSEhs2pfA1Gl6qYE8AfCrxoE6gFHk/view?usp=sharing" onmouseover="resumeHover()" onmouseout="backToDefault()">
+                        <img class="image" id="resImg" src="../Other/resume4.png">
+                    </a>
+                    <!-- github -->
+                    <a class="link" href="https://github.com/JoshBogin" onmouseover="gitHubHover()" onmouseout="backToDefault()">
+                        <img class="image" id="gitImg" src="../Other/github-logo.png">
+                    </a>
+                    <!-- linked in -->
+                    <a class="link" href="https://www.linkedin.com/in/joshuabogin/" onmouseover="linkedInHover()" onmouseout="backToDefault()">
+                        <img class="image" id="lnImg" src="../Other/linkedIn.png">
+                    </a>
+                    <!-- instagram -->
+                    <a class="link" href="https://www.instagram.com/joshbogin/" onmouseover="instaHover()" onmouseout="backToDefault()">
+                        <img class="image" id="instaImg" src="../Other/instagram.png">
+                    </a>
+                </div>
+                <div class="section footer">
+                    <p>Welcome to my personal website! Above are the links to my Resume, Github, LinkedIn, and Instagram pages. Thanks!</p>
+                </div>
+                <button id="button" onclick="changeBackground()">Click Me!</button>
+                <!-- maybe add title box to the page with background to make it universally visiable
+                         Then, add the links to other pages! -->
+                <!-- maybe add a footer that says something like: 
+                            "Welcome!
+                            Choose any option to be linked to that page."
+                        Then, make it so that text is replace by the location that the user
+                        will be sent to when the icon is being hovered over.
+                        -->
+            </div>
+        </div>
+        <script src="../js/website.js"></script>
+    </body>
+</html>

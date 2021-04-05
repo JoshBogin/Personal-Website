@@ -1,0 +1,275 @@
+html {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #dadada;
+  background: radial-gradient(ellipse at center, #eeeeee, #e646d9, #d823b1, #cf0db5, #3f3f3f);
+  height: 100%;
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 80vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  background-color: #4d4d4da8;
+  border-bottom: 1vh solid black;
+  border-right: 1vh solid black;
+  border-top: 0.25vh solid black;
+  border-left: 0.25vh solid black;
+  margin: 0.25vh;
+}
+
+.header {
+  min-height: 15vh;
+  max-height: 18vh;
+  font-size: 2.5vw;
+  text-shadow: 0.5vh 1vh #333333;
+  border-radius: 2vh 2vh 0 0;
+}
+
+.links {
+  width: 60vw;
+  min-height: 30vh;
+  flex-wrap: wrap;
+}
+
+.link {
+  background-color: #a0a0a0a4;
+  cursor: pointer;
+  height: 15vh;
+  width: 15vh;
+  padding: 1vh 2vh;
+  margin: 2vh 2vw;
+  box-shadow: 0.6vh 0.6vh 1vh 1vh #333333;
+  border-radius: 1vh;
+  text-align: center;
+}
+
+.link:hover {
+  background-color:#1f1f1f81;
+  box-shadow: 0.8vh 0.8vh 1.2vh 1.2vh #333333;
+}
+
+.link:active {
+  background-color: #1f1f1f81;
+  transition-duration: 0s;
+  box-shadow: 1vh 1vh 1.4vh 1.4vh #333333;
+  transform: translate(0.5vh, 0.5vh);
+}
+
+.image {
+  height: 100%;
+  width: 90%;
+}
+
+.footer {
+  min-height: 15vh;
+  max-height: 18vh;
+  border-radius: 0 0 0.5vh 0.5vh;
+  text-align: center;
+  font-size: 1.4vw;
+  text-shadow: 0.25vh 0.5vh #333333;
+}
+
+#button {
+  background-color: #55555577;
+  cursor: pointer;
+  padding: 1vh 2vh;
+  font-size: 2vw;
+  color: #f0f0f0;
+  text-shadow: 0.25vh 0.5vh #333333;
+  border-radius: 1vh;
+  margin: 1vh;
+}
+
+#button:hover {
+  background-color:#353535;
+  box-shadow: 0.25vh 0.25vh #333333;
+}
+
+#button:active {
+  background-color: #353535;
+  transition-duration: 0s;
+  box-shadow: 0.25vh 0.25vh #1a1a1a;
+  transform: translate(0.5vh, 0.5vh);
+}
+
+/* gets rid of weird white box around input */
+*:focus {
+  outline: none;
+}
+
+.section:before, .section:after  {
+  content: none;
+}
+
+@media (max-width:540px) {
+    .container {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .section {
+    width: 90vw;
+  }
+
+  .header {
+    font-size: 4.75vw;
+  }
+
+  .link {
+    height: 14vh;
+    width: 14vh;
+    margin: 2vh 3.5vw;
+  }
+
+  .footer {
+    font-size: 3.5vw;
+  }
+  
+  #button {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 700px) {
+    .container {
+    width: 87.5vw;
+    height: 90vh;
+  }
+
+  .section {
+    width: 87.5vw;
+  }
+
+  .header {
+    font-size: 3.75vw;
+  }
+
+  .link {
+    height: 14.5vh;
+    width: 14.5vh;
+    margin: 2vh 3vw;
+  }
+
+  .footer {
+    font-size: 3vw;
+  }
+
+  #button {
+    font-size: 3.5vw;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .container {
+    width: 80vw;
+    height: 90vh;
+  }
+
+  .section {
+    width: 80vw;
+  }
+
+  .header {
+    font-size: 3.3vw;
+  }
+
+  .link {
+    height: 15vh;
+    width: 15vh;
+    margin: 2vh 2.5vw;
+  }
+
+  .footer {
+    font-size: 2.5vw;
+  }
+
+  #button {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .container {
+    width: 75vw;
+    height: 87.5vh;
+  }
+
+  .section {
+    width: 75vw;
+  }
+
+  .header {
+    font-size: 3vw;
+  }
+
+  .footer {
+    font-size: 2vw;
+  }
+
+  #button {
+    font-size: 2.75vw;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1200px) {
+    .container {
+    width: 72.5vw;
+    height: 82.5vh;
+  }
+
+  .section {
+    width: 72.5vw;
+  }
+
+  .header {
+    font-size: 2.75vw;
+  }
+
+  .footer {
+    font-size: 1.8vw;
+  }
+
+  #button {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    .container {
+    width: 72.5vw;
+    height: 82.5vh;
+  }
+
+  .section {
+    width: 71vw;
+  }
+
+  .header {
+    font-size: 2.6vw;
+  }
+
+  .footer {
+    font-size: 1.6vw;
+  }
+
+  #button {
+    font-size: 2.2vw;
+  }
+}
